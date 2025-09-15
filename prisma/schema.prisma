@@ -11,7 +11,9 @@ model Product {
   id          Int      @id @default(autoincrement())
   name        String
   description String?
+  imageUrl    String? 
   price       Float
+  inStock     Boolean   @default(true)
   category    String
   createdAt   DateTime @default(now())
 }
