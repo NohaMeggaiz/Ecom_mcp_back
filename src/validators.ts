@@ -5,8 +5,9 @@ export const createProductSchema = z.object({
   description: z.string().optional(),
   price: z.number().nonnegative(),
   category: z.string().min(1),
-   imageUrl: z.string().url().optional() ,
-    inStock: z.boolean().optional()
+  imageUrl: z.string().url().optional() ,
+  inStock: z.boolean().optional(),
+  variants: z.array(z.string()).optional(),
 });
 
 export type CreateProductInput = z.infer<typeof createProductSchema>;

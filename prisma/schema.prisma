@@ -14,6 +14,8 @@ model Product {
   imageUrl    String? 
   price       Float
   inStock     Boolean   @default(true)
+   variants  Json?
+
   category    String
   createdAt   DateTime @default(now())
 }

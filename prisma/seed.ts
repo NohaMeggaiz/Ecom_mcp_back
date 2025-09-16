@@ -3,11 +3,12 @@ const prisma = new PrismaClient();
 
 const products = [
   {
-    name: "Women's Cherry Print Tee Shirt Short Sleeve",
+    name: "Cherry Print Tee Shirt ",
     description: 'Soft and skin-friendly material offers medium stretch for a comfortable wearing feeling',
     price: 19.99,
     imageUrl: 'https://m.media-amazon.com/images/I/61HxNTPQd2L._AC_SY500_.jpg',
     category: 'Apparel',
+    variants: ['M','L','XL'],
     inStock: true,
   },
   {
@@ -16,6 +17,7 @@ const products = [
     price: 49.5,
     imageUrl: 'https://m.media-amazon.com/images/I/51JDeM6cOwL._AC_SY500_.jpg',
     category: 'Apparel',
+    variants: ['M','L','XL'],
     inStock: false,
   },
   {
@@ -24,6 +26,7 @@ const products = [
     price: 9.5,
     imageUrl: 'https://m.media-amazon.com/images/I/51YqxpOa+OL._AC_SX679_.jpg',
     category: 'Home',
+    variants: [],
     inStock: true,
   }
 ];
